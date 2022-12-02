@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*background-color: rgb(129, 89, 89);*/
+    background-color: #fb7777;
+    padding-bottom: 5em;
+}
+
+/* ----- Färgpalett
+.first-color { 
+	background: #05004e; 
+}
+	
+.second-color { 
+	background: #ff0000; 
+}
+
+.third-color { 
+	background: #fb7777; 
+}
+
+.fourth-color { 
+	background: #ffcccc; 
+}
+*/
+
+/* --------Förstasidan ---------*/
+main{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: .2em;
+    color: #fff;
+
+    padding: 1em 0 1.5em 0;
+    background: linear-gradient( #ffcccc,#fb7777);
+    /*background: linear-gradient(rgb(63, 8, 16), rgb(129, 89, 89));*/
+}
+
+.start-btn a{
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #05004e;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.start-btn{
+    padding: 2em 5em;
+    margin-top: 5rem;
+    border-radius: 45px;
+    border: none;
+
+}
+
+/* ---------- Cards ----------- */
+.board-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.board{
+    width: 80%;
+    margin-top: 2em;
+}
+
+.board img{
+    width: 15%;
+    margin: 0.4em;
+    height: 8em;
+}
+
+/* ----------- Score board -------- */
+.main-score-board{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 30rem;
+    
+    /*background-color: rgb(63, 8, 16);*/
+    background-color: #ffcccc;
+    color: #05004e;
+    margin-left: 2em;
+    margin-right: 1em;
+    margin-top: 2em;
+
+    border-radius: 10px;
+}
+.btn-start-over, .btn-end-game{
+    padding: 1em 0;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    border: none;
+    width: 80%;
+    margin-left: 1.2em;
+}
+.btn-start-over a, .btn-end-game a{
+    color: #05004e;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.player{
+    margin: 0 .5em;
+    border-radius: 10px;
+    padding: .5em .4em;
+}
+.Player1{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+.Player2{
+    margin-bottom: 6em;
+}
+.player h2{
+    
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+/* ------ Game Over ---------- */
+
+.wonDisplay{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    text-align: center;
+    color: #05004e;
+    font-weight: bold;
+}
